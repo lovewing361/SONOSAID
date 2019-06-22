@@ -1,0 +1,40 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ],
+  "description": "",
+  "env": {
+    "ENCRYPTION_SECRET": {
+      "required": true
+    },
+    "LANG": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "SPOTIFY_CLIENT_CALLBACK_URL": {
+      "required": true
+    },
+    "SPOTIFY_CLIENT_ID": {
+      "required": true
+    },
+    "SPOTIFY_CLIENT_SECRET": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "SONOSAID",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
